@@ -1,5 +1,8 @@
-angular.module('duParallax', ['duScroll', 'duParallax.directive', 'duParallax.helper']);
+var duParallax = angular.module('duParallax', ['duScroll', 'duParallax.directive', 'duParallax.helper']);
 
+if (typeof module !== 'undefined' && module && module.exports) {
+  module.exports = duParallax;
+}
 
 angular.module('duParallax.helper', []).
 factory('parallaxHelper',
